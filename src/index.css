@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --frosted-bg: #e0e7ff;
+}
+
+body {
+  background-color: var(--frosted-bg);
+  color: #1e293b; /* slate-800 */
+  overflow: hidden;
+}
+
+.mesh-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: 
+    radial-gradient(at 0% 0%, #c7d2fe 0%, transparent 50%), 
+    radial-gradient(at 50% 0%, #ddd6fe 0%, transparent 50%), 
+    radial-gradient(at 100% 0%, #fbcfe8 0%, transparent 50%), 
+    radial-gradient(at 0% 100%, #e0e7ff 0%, transparent 50%), 
+    radial-gradient(at 50% 100%, #fae8ff 0%, transparent 50%), 
+    radial-gradient(at 100% 100%, #ede9fe 0%, transparent 50%);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 24px;
+}
+
+.text-gradient {
+  background: linear-gradient(to bottom right, #3730a3, #4f46e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.timer-text {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -2px;
+}
